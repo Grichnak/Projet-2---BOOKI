@@ -1,7 +1,5 @@
 #block_page {
     max-width: 1400px;
-    margin: 0;
-    padding: 0;
   }
   
   header {
@@ -11,44 +9,64 @@
     line-height: 19px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin: 20px;
-    padding: 0;
-  }
-  
-  header li {
-    display: inline-block;
-    padding: 20px;
-    font-family: 'Raleway', sans-serif;
-    color: rgb(14, 1, 1);
-    cursor: pointer;
-    transition: .2s ease-in;
-    margin-right: 0;
-    margin: 0;
-    padding: 0;
+    align-items: center;    
   }
 
+  #logo {
+    padding-left: 40px;    
+    padding-top: 40px;
+  }
+
+   
+  header li {
+    display: inline-flex;
+    color: rgb(14, 1, 1);
+    align-items: center;
+  }
+
+  /*position du menu*/
   header nav ul li {
     margin-right: 40px;
+    padding-right: 70px;
+    padding-top: 40px;
   }
   
-  
+  /*enlève les lignes en dessous des liens*/
   header li a {
     text-decoration: none;
-    color: inherit;
-    margin: 0;
-    padding: 0;
+    color: inherit;    
   }
-  
+
+  /*Ajoute une bordure et un chagement de couleur sur hover*/   
   header li:hover {
     border-top: solid blue;
-    margin: 0;
-    padding: 0;
+    color: blue;            
   }
   
-  #logo {
-    padding-left: 20px;
-    margin: 0;
-    padding: 0;
+  #recherche h1 {
+    position: absolute;
+    width: 600px;
+    height: 26px;
+    left: 55px;
+    top: 126px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    color: #000000;
   }
-  
+
+  #recherche p{
+    position: absolute;
+    width: 296px;
+    height: 19px;
+    left: 55px;
+    top: 160px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+  }
