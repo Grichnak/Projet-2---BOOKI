@@ -1,72 +1,89 @@
-#block_page {
-    max-width: 1400px;
-  }
-  
-  header {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;    
-  }
+/* Police */
+html, body{
+  font-family: 'Raleway', sans-serif;
+    
+  color: black;
+  padding: 5px;
+}
 
-  #logo {
-    padding-left: 40px;    
-    padding-top: 40px;
-  }
+/* Classes Flexbox*/
+.flexCenter{
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
 
-   
-  header li {
-    display: inline-flex;
-    color: rgb(14, 1, 1);
-    align-items: center;
-  }
+.flexAround{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 
-  /*position du menu*/
-  header nav ul li {
-    margin-right: 40px;
-    padding-right: 70px;
-    padding-top: 40px;
-  }
-  
-  /*enlève les lignes en dessous des liens*/
-  header li a {
-    text-decoration: none;
-    color: inherit;    
-  }
+.flexBetween{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-  /*Ajoute une bordure et un chagement de couleur sur hover*/   
-  header li:hover {
-    border-top: solid blue;
-    color: blue;            
-  }
-  
-  #recherche h1 {
-    position: absolute;
-    width: 600px;
-    height: 26px;
-    left: 55px;
-    top: 126px;
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 26px;
-    color: #000000;
-  }
+/* Espacement entre les liens du menus*/
+.linkSpacing{
+  width: 30%;  
+}
 
-  #recherche p{
-    position: absolute;
-    width: 296px;
-    height: 19px;
-    left: 55px;
-    top: 160px;
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    color: #000000;
-  }
+/*Ajoute une bordure et un chagement de couleur sur hover*/   
+nav li:hover {
+  color: blue;  
+  border-top: 1px solid blue;    
+  margin-top: -51px;   
+  padding-top: 50px;      
+}
+
+/*Enlève les décorations du menu*/
+nav ul{
+  list-style-type: none; 
+  padding-top: 1%;
+}
+
+nav a{
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Ajoute du padding pour que le logo et le menu soit au même niveau*/
+.logoPadding{
+  padding-top: 31px;
+}
+
+/*Header*/
+
+.searchBorder{
+  width: 400px;
+  border-radius: 10px;
+}
+
+.mapIcon{
+  width: 14px;
+  height: 18px;
+} 
+
+.iconProperties{
+  width: 50px;
+  height: 49px;
+}
+
+.formProperties{
+  height: 49px;
+  width: 332px;
+  font-size: 18px;
+  color: black;
+  font-weight: bold;
+}
+
+.buttonProperties{
+  height: 49px;
+  width: 132px;
+  left: 341px;
+  top: 200px;
+  border-radius: [object Object]px;
+  padding: 15px 16px 15px 16px;
+}

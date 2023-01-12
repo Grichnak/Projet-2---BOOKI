@@ -6,31 +6,40 @@
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+   <script src="https://kit.fontawesome.com/2ca01e49a3.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-   <div id="bloc_page">
-      <header>
-         <div id="logo"><img src="logo\Booki.png" alt="logo BOOKI" width="61px" height="19px"></div>
-         <nav>
-            <ul>
-               <li><a href="#">Hébergements</a></li>              
-               <li><a href="#">Activités</a></li>
-            </ul>
-         </nav>
-      </header>
-      <div id="recherche">
+   <nav>
+      <div class="flexBetween">      
+         <div class="logoPadding">
+            <img src="logo\Booki.png" alt="logo BOOKI" width="61px" height="19px">
+         </div>         
+         <ul class="linkSpacing flexAround">
+            <li ><a href="#">Hébergements</a></li>              
+            <li ><a href="#">Activités</a></li>
+         </ul>
+      </div>           
+   </nav>
+   <header>    
+      <div>
           <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-          <p>En plein centre-ville ou en pleine nature</p>
-            <form method ="get" action="">
-               <p>
-                   <label for="localisation">Marseille, France</label> 
-                   <input type="text" name="localisation" id="localisation" placeholder="Marseille, France">
-               </p>
-            </form>
+          <p>En plein centre-ville ou en pleine nature</p>                           
       </div>
-     
-   </div>
-  
+      <div class="searchBorder flexCenter">
+         <div class="mapIcon flexCenter iconProperties">
+            <i class="fa-solid fa-location-dot"></i>
+         </div>
+         <div class="formProperties"> 
+            <form method ="get" action=""></form>           
+               <p><input class="flexCenter" type="text" name="localisation" id="localisation" placeholder="Marseille, France"></p>               
+            </form>
+         </div>
+         <div class="buttonProperties">
+            <button>Rechercher</button>
+         </div>
+      </div>      
+   </header>  
 </body>
+
 </html>
