@@ -1,9 +1,8 @@
 /* Police */
 html, body{
-  font-family: 'Raleway', sans-serif;
-    
+  font-family: 'Raleway', sans-serif;    
   color: black;
-  padding: 5px;
+  padding: 10px;
 }
 
 /* Classes Flexbox*/
@@ -27,15 +26,24 @@ html, body{
 
 /* Espacement entre les liens du menus*/
 .linkSpacing{
-  width: 30%;  
+  padding-left: 50px;  
+  padding-right: 50px;  
 }
+
+nav li:first-child {
+  margin-right: 50px;
+}
+nav li:last-child {
+  margin-left: 50px;
+}
+
 
 /*Ajoute une bordure et un chagement de couleur sur hover*/   
 nav li:hover {
-  color: blue;  
-  border-top: 1px solid blue;    
-  margin-top: -51px;   
-  padding-top: 50px;      
+  color: #0065FC;
+  border-top: 1px solid #0065FC;   
+  margin-top: -55px;   
+  padding-top: 54px;      
 }
 
 /*Enlève les décorations du menu*/
@@ -69,6 +77,8 @@ nav a{
 .iconProperties{
   width: 50px;
   height: 49px;
+  border: 1px solid #F2F2F2;
+  border-radius: 15px 0px 0px 15px;
 }
 
 .formProperties{
@@ -76,14 +86,27 @@ nav a{
   width: 332px;
   font-size: 18px;
   color: black;
-  font-weight: bold;
+  font-weight: 700;  
+  border: none;
 }
 
 .buttonProperties{
   height: 49px;
   width: 132px;
   left: 341px;
-  top: 200px;
-  border-radius: [object Object]px;
-  padding: 15px 16px 15px 16px;
+  top: 200px; 
+  background-color: #0065FC !important;
+  border: 1px solid #0065FC;
+  border-radius: 0px 15px 15px 0px;
+  padding: 0 !important;  
+  list-style-type: none; 
 }
+
+.backGrey{
+  background-color: #f2f2f2;
+}
+
+.backBlue{
+  background-color: #0065FC;
+}
+

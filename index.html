@@ -3,6 +3,7 @@
 <head>
    <title>BOOKI</title>
    <link rel="stylesheet" type="text/css" href="styles.css">
+   <link rel="stylesheet" type="text/css" href="normalize.css">
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
@@ -15,7 +16,7 @@
          <div class="logoPadding">
             <img src="logo\Booki.png" alt="logo BOOKI" width="61px" height="19px">
          </div>         
-         <ul class="linkSpacing flexAround">
+         <ul class="linkSpacing flexBetween">
             <li ><a href="#">Hébergements</a></li>              
             <li ><a href="#">Activités</a></li>
          </ul>
@@ -27,16 +28,15 @@
           <p>En plein centre-ville ou en pleine nature</p>                           
       </div>
       <div class="searchBorder flexCenter">
-         <div class="mapIcon flexCenter iconProperties">
+         <div class="mapIcon flexCenter backGrey iconProperties">
             <i class="fa-solid fa-location-dot"></i>
          </div>
-         <div class="formProperties"> 
-            <form method ="get" action=""></form>           
-               <p><input class="flexCenter" type="text" name="localisation" id="localisation" placeholder="Marseille, France"></p>               
-            </form>
+         <div class=" flexCenter">                      
+               <input class="flexCenter formProperties" type="text" name="localisation" id="localisation" placeholder="Marseille, France">    
          </div>
-         <div class="buttonProperties">
-            <button>Rechercher</button>
+         <div class="buttonProperties backBlue noDecoration flexCenter">
+            <a href="#" role="button" >Rechercher</a>
+
          </div>
       </div>      
    </header>  
