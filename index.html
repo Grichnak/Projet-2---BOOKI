@@ -2,12 +2,13 @@
 <html>
 <head>
    <title>BOOKI</title>
+   <script src="https://kit.fontawesome.com/2ca01e49a3.js" crossorigin="anonymous"></script>
    <link rel="stylesheet" type="text/css" href="styles.css">
    <link rel="stylesheet" type="text/css" href="normalize.css">
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
-   <script src="https://kit.fontawesome.com/2ca01e49a3.js" crossorigin="anonymous"></script>
+   
 </head>
 
 <body>
@@ -28,18 +29,40 @@
           <p>En plein centre-ville ou en pleine nature</p>                           
       </div>
       <div class="searchBorder flexCenter">
-         <div class="mapIcon flexCenter backGrey iconProperties">
-            <i class="fa-solid fa-location-dot"></i>
+         <div class="iconSize greyBack flexCenter">
+            <i class="fa-solid fa-location-dot"> </i>
          </div>
-         <div class=" flexCenter">                      
-               <input class="flexCenter formProperties" type="text" name="localisation" id="localisation" placeholder="Marseille, France">    
+         <div class="recherche flexCenter paddingSearch ">
+            <input   class="borderNone" 
+                     type="search" 
+                     placeholder="Marseille, France"/>
+         </div>  
+         <div class="blueBack flexCenter buttonSearch ">
+            <a href="#" 
+               style="color: white; text-decoration: none;" 
+               role="button" >Rechercher</a> 
+         </div> 
+      </div> 
+      <div class="filtre margeFiltre">
+         <div class="margeTitre"><h3>Filtres</h3>
          </div>
-         <div class="buttonProperties backBlue noDecoration flexCenter">
-            <a href="#" role="button" >Rechercher</a>
-
+         <div class="flexBetween filtreTextIcon "> 
+            <i class="fa-solid fa-money-bill-wave fa-lg filtreIcon flexCenter"></i> <div class="filtreText flexCenter">Économique</div> 
          </div>
-      </div>      
+         <div class="flexBetween filtreTextIcon"> 
+            <i class="fa-solid fa-person fa-lg filtreIcon flexCenter"></i> <div class="filtreText flexCenter">Familial</div> 
+         </div>         
+         <div class="flexBetween filtreTextIcon"> 
+            <i class="fa-solid fa-heart fa-lg filtreIcon flexCenter"></i> <div class="filtreText flexCenter">Romantique</div> 
+         </div>
+         <div class="flexBetween filtreTextIcon"> 
+            <i class="fa-solid fa-dog fa-lg filtreIcon flexCenter"></i> <div class="filtreText flexCenter">Animaux autorisés</div> 
+         </div>
+      </div>
+      <div class="info">
+         <div class="parentIcon fa-sm flexCenter"><i class="fa-solid fa-info blueColor"></i></i></div>
+         <p>Plus de 500 logements sont disponibles dans cette ville</p>
+      </div>            
    </header>  
 </body>
-
 </html>

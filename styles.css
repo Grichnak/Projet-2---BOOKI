@@ -67,46 +67,111 @@ nav a{
 .searchBorder{
   width: 400px;
   border-radius: 10px;
+  border: 0.5px solid #f2f2f2;
 }
 
-.mapIcon{
-  width: 14px;
-  height: 18px;
+.iconSize{
+  width: 50px;
+  height: 50px;
+  border-radius: 10px 0 0 10px;
 } 
 
-.iconProperties{
-  width: 50px;
-  height: 49px;
-  border: 1px solid #F2F2F2;
-  border-radius: 15px 0px 0px 15px;
-}
-
-.formProperties{
-  height: 49px;
-  width: 332px;
+.recherche{
+  height: 50px;
+  width: 230px;
   font-size: 18px;
   color: black;
-  font-weight: 700;  
-  border: none;
+  font-weight: bold;
 }
 
-.buttonProperties{
-  height: 49px;
-  width: 132px;
-  left: 341px;
-  top: 200px; 
-  background-color: #0065FC !important;
-  border: 1px solid #0065FC;
-  border-radius: 0px 15px 15px 0px;
-  padding: 0 !important;  
-  list-style-type: none; 
-}
-
-.backGrey{
+.greyBack{
   background-color: #f2f2f2;
 }
 
-.backBlue{
+.blueBack{
   background-color: #0065FC;
 }
 
+.borderNone{
+  border: none;
+}
+
+.paddingSearch{
+  padding-left: 20px;
+}
+
+.buttonSearch{
+  height: 50px;
+  width: 120px;
+  color: white;
+  cursor: pointer;
+  border-radius: 0 10px 10px 0;
+}
+
+/*Enlève l'underline d'un lien */
+.textDecoration{
+  text-decoration: none;
+}
+
+/*Filtres*/
+.filtre{
+  display: flex;
+  align-items: center;  
+}
+
+.margeFiltre{
+  margin-top: 50px;
+  margin-bottom: 40px;
+} 
+
+.margeTitre{
+  margin-right: 20px;
+}
+
+.filtreTextIcon{
+  border: 2px solid #d9d9d9;
+  height: 50px;
+  border-radius: 30px;
+  margin-right: 20px;
+}
+
+.filtreIcon{
+  border-radius: 25px 0 0 25px;
+  width: 52px;
+  height: 52px;
+  color: #0065FC;
+  ;
+}
+
+.filtreText{
+  height: 50px;  
+  padding-right: 20px;
+  border-radius: 0 25px 25px 0;
+}
+
+.filtreTextIcon:hover > .filtreText {
+  color: #0065FC;
+  background-color: #DEEBFF
+}
+
+.filtreTextIcon:hover > .filtreIcon {
+  color: #0065FC;
+  background-color: #DEEBFF;
+}
+
+.info{
+  display: flex;
+  align-items: center;
+}
+
+.blueColor{
+  color: #0065FC;
+}
+
+.parentIcon{
+  width: 24px;
+  height: 24px;
+  border: 1px solid #D9D9D9;
+  border-radius: 25px;
+  margin-right: 11px;
+}
