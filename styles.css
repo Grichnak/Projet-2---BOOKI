@@ -3,6 +3,8 @@ html, body{
   font-family: 'Raleway', sans-serif;    
   color: black;
   padding: 10px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 /* Classes Flexbox*/
@@ -62,7 +64,9 @@ nav li:hover {
   color: #0065FC;
   border-top: 1px solid #0065FC;   
   margin-top: -55px;   
-  padding-top: 54px;      
+  padding-top: 54px; 
+  padding-left: 0.9vw;   
+  padding-right: 0.9vw;  
 }
 
 /*Enlève les décorations du menu*/
@@ -181,6 +185,7 @@ nav a{
 .info{
   display: flex;
   align-items: center;
+  margin-bottom: 39px;
 }
 
 .blueColor{
@@ -208,8 +213,8 @@ nav a{
 
 .sizePopulaires{
   flex: 1;
-  height: 625px;  
-  height: 420px;
+  height: 625px;   
+  width: 420px; 
   margin-left: 20px;
   border-radius: 10px;
 }
@@ -271,6 +276,7 @@ nav a{
 .lodgingBloc{
   padding-left: 20px;
   padding-right: 20px;
+  padding-top: 42px;
 }
 
 .lodgingCard{
@@ -282,7 +288,7 @@ nav a{
 }
 
 .bloc1{
-  margin-bottom: 10px;
+  margin-bottom: 23px;
 }
 
 .bloc2{
@@ -295,4 +301,75 @@ nav a{
 
 .texteGras{
   font-weight: bold;
+}
+
+/* Hébergements populaires*/
+
+.blocPopulaire{
+  padding-left: 37px;
+  padding-right: 40px;
+}
+
+.imgPopulaire1{
+  background-image: url("Image/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 137px;
+  height: 144px;
+  border-radius: 15px  0 0 15px;
+}
+
+.cubePopulaire{
+  background-color: white;
+  height: auto;
+  padding: 1% 0 1% 1%;
+  border-radius: 20px;
+}
+
+.blocPopulaire12{
+  margin-bottom: 33px;
+}
+
+.cubeDetailsPopulaires{
+  width: 60%;
+  padding-left: 5%;
+}
+
+.imgPopulaire2{
+  background-image: url("Image/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 137px;
+  height: 144px;
+  border-radius: 15px  0 0 15px;
+}
+
+.imgPopulaire3{
+  background-image: url("Image/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 137px;
+  height: 144px;
+  border-radius: 15px  0 0 15px;
+}
+
+/*Activités*/ 
+
+.activités{
+  margin-top: 60px;
+  margin-bottom: 61px;
+}
+
+.blocActivités{
+  width: 100%;
+  height: 600px;
+}
+
+.imgActivités1{
+  background-image: url("Image/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 302px;
+  height: 389px;
+  border-radius: 20px  20px 0 0;
 }
