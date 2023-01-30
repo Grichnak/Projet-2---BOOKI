@@ -46,27 +46,39 @@ html, body{
 }
 
 /* Espacement entre les liens du menus*/
-.linkSpacing{
-  padding-left: 50px;  
-  padding-right: 50px;  
+.sizeLiens{
+  width: 27%;  
 }
 
 nav li:first-child {
-  margin-right: 50px;
-}
-nav li:last-child {
-  margin-left: 50px;
+  margin-right: 67px;
 }
 
+.textCenter{
+  text-align: center;
+}
 
-/*Ajoute une bordure et un chagement de couleur sur hover*/   
-nav li:hover {
-  color: #0065FC;
-  border-top: 1px solid #0065FC;   
+.borderTop1{
+  position: absolute;
+  border-top: 2px solid white;
+  width: 162px;
+  transition: all 0.2s;
   margin-top: -55px;   
-  padding-top: 54px; 
-  padding-left: 0.9vw;   
-  padding-right: 0.9vw;  
+  padding-top: 54px;
+}
+
+.borderTop2{
+  position: absolute;
+  border-top: 2px solid white;
+  width: 90px;
+  transition: all 0.2s;
+  margin-top: -55px;   
+  padding-top: 54px;
+}
+
+/*Ajoute une bordure et un changement de couleur sur hover*/   
+nav a:hover {  
+  border-top-color:  #0065FC;     
 }
 
 /*Enlève les décorations du menu*/
@@ -81,6 +93,7 @@ nav a{
 }
 
 /* Ajoute du padding pour que le logo et le menu soit au même niveau*/
+
 .logoPadding{
   padding-top: 31px;
 }
@@ -105,6 +118,12 @@ nav a{
   font-size: 18px;
   color: black;
   font-weight: bold;
+}
+
+/* Enlève le rectangle de recherche*/
+input:focus {
+  
+  outline: none;
 }
 
 .greyBack{
@@ -299,6 +318,14 @@ nav a{
   width: 90%;
 }
 
+.blueStar{
+  color: #0065FC;
+}
+
+.greyStar{
+  color: #F2F2F2;
+}
+
 .texteGras{
   font-weight: bold;
 }
@@ -407,5 +434,24 @@ nav a{
 }
 
 .ombreBlocActivités{
-  box-shadow: 5px 5px 5px 5px #f2f2f2;
+  box-shadow: #f2f2f2 0px 7px 29px 0px;
+}
+
+/*Footer*/
+
+.footer{
+  height: 225px;
+  margin-top: 61px;  
+}
+
+.sizeBlocFooter{
+  height: 150px;
+}
+
+.marginFootLeft{
+  margin-left: 5%;
+}
+
+.marginFootRight{
+  margin-right: 27%;
 }
